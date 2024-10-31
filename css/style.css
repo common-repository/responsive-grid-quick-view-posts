@@ -1,0 +1,98 @@
+.smartcms_grid {
+    float: left;
+    position: relative;
+    width: 100%;
+}
+.smartcms_grid_item {
+    border: 1px solid #ccc;
+    float: left;
+    margin: 2%;
+    padding: 10px;
+    width: 98%;
+}
+.smartcms_grid_layout {
+    clear: both;
+    float: left;
+    width: 100%;
+}
+.smartcms_grid_layout > .smartcms_grid_item:first-child {
+    margin-left: 0;
+}
+.smartcms_grid_layout > .smartcms_grid_item:last-child{
+	margin-right: 0;
+}
+.smartcms_grid_title {
+    float: left;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    width: 100%;
+}
+.smartcms_grid_info {
+    margin-bottom: 5px;
+}
+.smartcms_grid_img_hover {
+    background-color: rgba(0, 0, 0, 0.75);
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: scale(0);
+    width: 100%;
+	transition: all 0.7s ease 0s;
+	text-align: center;
+}
+.smartcms_grid_img {
+    float: left;
+    position: relative;
+    width: 100%;
+}
+.smartcms_grid_item:hover .smartcms_grid_img_hover {
+    transform: scale(1);
+}
+.smartcms_colorbox {
+    background: #08c none repeat scroll 0 0;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-block;
+    margin-top: 25%;
+    padding: 10px;
+}
+.smartcms_colorbox:hover {
+    color: #fff;
+    text-decoration: none;
+}
+.smartcms_content_left {
+    float: left;
+    width: 40%;
+}
+.smartcms_content_right {
+    float: right;
+    width: 58%;
+}
+.content_right_title {
+    font-size: 15px;
+    font-weight: bold;
+}
+.smartcms_grid_item_block{
+	float: left;
+}
+@media (min-width: 481px) and (max-width: 641px) {
+	.smartcms_grid_item_block {
+		margin: 5px !important;
+		width: 41% !important;
+	}
+	.smartcms_grid_layout {
+		clear: none !important;
+		float: none !important;
+	}
+}
+@media (max-width: 480px){
+	.smartcms_grid_item_block {
+		margin: 5px !important;
+		width: 100% !important;
+	}
+	.smartcms_grid_layout {
+		clear: none !important;
+		float: none !important;
+	}
+}
